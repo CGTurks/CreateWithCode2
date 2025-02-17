@@ -33,13 +33,13 @@ public class SpawnManager : MonoBehaviour
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
         Vector3 spawnPos = new Vector3(-spawnPosX, 0, Random.Range(-spawnRangeZ, spawnRangeZ));
-        Instantiate(animalPrefabs[animalIndex], spawnPos, Quaternion.Euler(0, 90, 0)); // Face right
+        Instantiate(animalPrefabs[animalIndex], spawnPos, Quaternion.Euler(0, 90, 0)); 
     }
 
     void RightEnemySpawner()
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
         Vector3 spawnPos = new Vector3(spawnPosX, 0, Random.Range(-spawnRangeZ, spawnRangeZ));
-        Instantiate(animalPrefabs[animalIndex], spawnPos, Quaternion.Euler(0, -90, 0)); // Face left
+        Instantiate(animalPrefabs[animalIndex], spawnPos, Quaternion.Euler(0, -90, 0)); 
     }
 }
