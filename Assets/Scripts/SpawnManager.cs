@@ -6,11 +6,11 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
 
-    private float spawnRangeX = 10; // Horizontal range for top spawns
-    private float spawnPosZ = 20; // Z position for top spawns
+    private float spawnRangeX = 10; 
+    private float spawnPosZ = 20; 
 
-    private float spawnPosX = 20; // X position for left & right spawns
-    private float spawnRangeZ = 10; // Vertical range for left & right spawns
+    private float spawnPosX = 20; 
+    private float spawnRangeZ = 10; 
 
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
