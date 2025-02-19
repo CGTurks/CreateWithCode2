@@ -1,17 +1,17 @@
 using UnityEngine;
-using UnityEngine.UI; // Import UI namespace
+using UnityEngine.UI;
 
 public class DetectCollision : MonoBehaviour
 {
     public int health = 3;
-    public Slider hungerBar; // Reference to the Hunger Bar UI
+    public Slider hungerBar; 
 
     void Start()
     {
         if (hungerBar != null)
         {
             hungerBar.maxValue = health;
-            hungerBar.value = 0; // Start empty
+            hungerBar.value = 0; 
         }
     }
 
@@ -34,7 +34,7 @@ public class DetectCollision : MonoBehaviour
 
             if (hungerBar != null)
             {
-                hungerBar.value += 1; // Fill up the hunger bar
+                hungerBar.value += 1; 
             }
 
             if (health <= 0)
